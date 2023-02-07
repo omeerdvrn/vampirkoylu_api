@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+include "../firebase/setup_client_create.php";
 
 class Database{
     var $connection;
@@ -10,9 +10,12 @@ class Database{
     }
 
     private function connect($host, $username, $password, $database_name){
-        $this->connection = mysqli_connect($host, $username, $password, $database_name);
-        return $this->connection;
+        // $this->connection = mysqli_connect($host, $username, $password, $database_name);
+        // return $this->connection;
+        setup_client_create("vampirkoylu-api");
     }
+
+    
 
 }
 
