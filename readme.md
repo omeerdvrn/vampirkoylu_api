@@ -51,7 +51,7 @@ There are total 17 roles and 3 classes in this game. The classes are Villagers, 
 #### Read a role by its class
 
 ```http
-  GET vampirkoylu_api/api/read_by_class?class={class}
+  GET vampirkoylu_api/api/read_by_class.php?class={class}
 ```
 
 | Parameter | Type     | Description                |
